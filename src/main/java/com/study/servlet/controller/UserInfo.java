@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicReference;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
@@ -23,7 +22,7 @@ public class UserInfo extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Gson gson = new Gson();
-		response.setCharacterEncoding("UTF-8");			// 제일 위에서 먼저 실행
+//		response.setCharacterEncoding("UTF-8");			// 제일 위에서 먼저 실행
 		System.out.println("GET 요청");
 		String name = request.getParameter("name");
 		String phone = request.getParameter("phone");
